@@ -4,8 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 withEnv(["PATH+NODEJS=/usr/local/bin:/usr/local/sbin"]) {
-                                sh 'node -v'
-                                sh 'npm install'
+                                'node -v'
+                                'npm install'
                     }
             }
         }
