@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+                withEnv(["PATH+NODEJS=/usr/local/bin:/usr/local/sbin"]) {
+                                sh 'node -v'
+                                sh 'npm install'
+                    }
             }
         }
     }
