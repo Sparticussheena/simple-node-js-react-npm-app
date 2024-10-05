@@ -9,7 +9,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone the GitHub repository
-                git clone 'https://github.com/Sparticussheena/simple-node-js-react-npm-app.git'
+                git url: 'https://github.com/Sparticussheena/simple-node-js-react-npm-app.git'
             }
         }
 
