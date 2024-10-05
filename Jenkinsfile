@@ -1,9 +1,9 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS 22.9.0'  // Use the Node.js version configured in Jenkins
-    }
+    //tools {
+    //    nodejs 'NodeJS 22.9.0'  // Use the Node.js version configured in Jenkins
+    //}
 
     stages {
         stage('Clone Repository') {
